@@ -1,0 +1,21 @@
+{
+  "name": "tracker",
+  "version": "1.0.0",
+  "description": "Koa app running on Cloudflare Workers with Terraform infra",
+  "workspaces": ["api", "infrastructure"],
+  "scripts": {
+    "build": "bun run --filter api build:bun",
+    "predeploy": "bun run build",
+    "deploy": "bun run --filter infrastructure deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexander-williamson/tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexander-williamson/tracker/issues"
+  },
+  "homepage": "https://github.com/alexander-williamson/tracker#readme"
+}

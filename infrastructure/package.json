@@ -1,0 +1,13 @@
+{
+  "name": "infrastructure",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "deploy": "terraform init && terraform apply --auto-approve"
+  }
+}

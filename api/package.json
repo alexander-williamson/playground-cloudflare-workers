@@ -1,0 +1,21 @@
+{
+  "name": "api",
+  "module": "src/index.ts",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "private": true,
+  "scripts": {
+    "build:esbuild": "bunx esbuild src/index.ts --bundle --platform=browser --outfile=dist/index.js",
+    "build:bun": "bun build src/index.ts --outdir dist"
+  },
+  "type": "module",
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.20250906.0",
+    "cloudflare": "^5.0.0",
+    "hono": "^4.9.6"
+  }
+}
