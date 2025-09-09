@@ -30,7 +30,7 @@ bun run deploy
 
 ## Notes
 
-The important files are the [infrastructure\main.tf](infrastructure\main.tf) and the [api\src\index.ts](api\src\index.ts).
+The important files are the [infrastructure/main.tf](infrastructure/main.tf) and the [api/src/index.ts](api/src/index.ts).
 
 We create a new subdomain and bind a worker with a pattern to match and intercept all calls. Calls are routed to the worker.
 
