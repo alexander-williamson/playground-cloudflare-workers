@@ -1,4 +1,4 @@
-# Tracker
+# Playground - Cloudflare Workers
 
 Deploys a Cloudflare D1 Database and a worker with a few simple endpoints.
 
