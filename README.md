@@ -19,7 +19,7 @@ Create `infrastructure/terraform.tfvars` with:
 cloudflare_api_token = ""
 zone_id              = ""
 account_id           = ""
-domain_name          = "tracker.example.co.uk"
+domain_name          = "api.example.co.uk"
 ```
 
 From the rood directory using `bun`:
